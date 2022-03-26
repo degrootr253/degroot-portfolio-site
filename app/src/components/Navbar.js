@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import tailwind from "../assets/tailwind.png"
+import tailwind from '../assets/images/tailwind.png'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
