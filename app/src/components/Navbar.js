@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import tailwind from '../assets/images/tailwind.png'
+import Logo from '../assets/images/rd-logo.png'
 import { Link } from 'react-scroll'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center text-gray-300 px-4 bg-[#0a192f]">
+        <div className="fixed w-full h-[80px] flex justify-between items-center text-white px-4 bg-dark-gray">
             <div>
-                <img src={tailwind} alt="Tailwind" style={{ width: "50px" }} />
+                <img src={Logo} alt="Logo" style={{ width: "80px"}} />
             </div>
 
             {/* Menu */}
@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
+            <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-screen h-screen bg-dark-gray flex flex-col justify-center items-center"}>
                 <li className="py-6 text-4xl"><Link onClick={handleClick} to="home" smooth={true} offset={50} duration={1000}>
                     Home
                 </Link></li>
@@ -70,12 +70,12 @@ const Navbar = () => {
                             Github <FaGithub size={'30px'} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px]  duration-700 bg-orange-500 rounded-xl">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px]  duration-700 bg-peach rounded-xl">
                         <a className='flex items-center justify-between w-full text-gray-300' href="mailto:degrootr253@gmail.com">
                             Email <HiOutlineMail size={'30px'} />
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px]  duration-700 bg-lime-600 rounded-xl">
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px]  duration-700 bg-dark-blue rounded-xl">
                         <a className='flex items-center justify-between w-full text-gray-300' href="https://docs.google.com/document/d/1ueFW0LgsmBbPlKOM3yS5QYcXK1Kgo2xqe1H2CNvV9I8/export?format=pdf">
                             Resume <BsFillPersonLinesFill size={'30px'} />
                         </a>
