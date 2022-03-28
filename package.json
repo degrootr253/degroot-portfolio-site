@@ -1,0 +1,31 @@
+{
+  "name": "degroot-portfolio-site",
+  "version": "1.0.0",
+  "description": "A website that displays my skills and allows me to connect with possible employers.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node run test",
+    "start": "node server.js",
+    "develop": "concurrently \"npm run server\" \"npm run app\"",
+    "server": "nodemon server.js",
+    "app": "npm start --prefix app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/degrootr253/degroot-portfolio-site.git"
+  },
+  "author": "Ryan DeGroot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/degrootr253/degroot-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/degrootr253/degroot-portfolio-site#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15"
+  }
+}
