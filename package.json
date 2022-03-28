@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A website that displays my skills and allows me to connect with possible employers.",
   "engines": {
-    "npm": "16.x"
+    "node": "16.14.2",
+    "npm": "8.5.0"
   },
   "main": "server.js",
   "scripts": {
