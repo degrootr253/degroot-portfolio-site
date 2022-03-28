@@ -2,6 +2,9 @@
   "name": "degroot-portfolio-site",
   "version": "1.0.0",
   "description": "A website that displays my skills and allows me to connect with possible employers.",
+  "engines": {
+    "npm": "16.x"
+  },
   "main": "server.js",
   "scripts": {
     "test": "node run test",
