@@ -29,7 +29,10 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Home screenshot](./app/src/assets/images/homescreenshot.png)
+![Skills screenshot](./app/src/assets/images/skillsscreenshot.png)
+![Projects screenshot](./app/src/assets/images/projectsscreenshot.png)
+![Contact screenshot](./app/src/assets/images/contactscreenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
